@@ -51,9 +51,6 @@ const StudentAccount = (props: any) => {
             <Avatar size={"xl"} url={""} type={"photo"} />
             <Text style={[typography.labelLgBold, { maxWidth: 200 }]}>{UserName}</Text>
           </View>
-
-          <View style={{ flex: 1, width: "100%" }}></View>
-
           <Button size={"md"} label={"Se déconnecter"} priority={"secondary"} onPress={logOut} />
         </View>
       </ScrollView>

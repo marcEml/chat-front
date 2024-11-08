@@ -27,6 +27,7 @@ const StudentHomeScreen = (props: any) => {
   const getClass = async () => {
     try {
       const responseData: ClassData | ResponseError = await GetClass();
+     
 
       if (responseData.status && "class" in responseData.data) {
         setUserClass(responseData.data.class);
@@ -76,7 +77,9 @@ const StudentHomeScreen = (props: any) => {
           intégrer une nouvelle classe
         </Text>
 
-        <View style={{ width: "100%", flex: 1, minHeight: "70%" }}>
+     
+
+        <View style={{ width: "100%", flex: 1}}>
           {userClass.length === 0 ? (
             <View
               style={{

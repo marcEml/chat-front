@@ -90,11 +90,11 @@ const ProfileScreen = (props: any) => {
       <View style={styles.content}>
         <View style={styles.bloc}>
           <Text style={[typography.h1, { color: theme.colors.text.primary }]}>
-            Quel est votre mode d'utilisation de ESchool ?
+            Quel est votre mode d'utilisation de ClassMate ?
           </Text>
 
           <Text style={[typography.labelMdLight, { color: theme.colors.text.secondary }]}>
-            Dites-nous comment comptez-vous utiliser ESchool au quotidien pour personnaliser votre
+            Dites-nous comment comptez-vous utiliser ClassMate au quotidien pour personnaliser votre
             expérience.
           </Text>
         </View>
@@ -113,7 +113,7 @@ const ProfileScreen = (props: any) => {
           <UsageComponent
             active={check2}
             styles={styles}
-            Icon={"driver"}
+            Icon={"passenger"}
             label="Étudiant"
             theme={theme.colors}
             borderColor={borderColorDriver}
@@ -170,11 +170,7 @@ const UsageComponent = ({
 
           <RadioButton state={active ? "active" : "default"} onPress={onPress} />
         </View>
-
-        <Text style={[typography.labelSmLight, { color: theme.text.secondary }]}>
-          Vous recherchez des trajets récurrents pour des déplacements dans d’autres villes ou
-          sorties occasionnelles.
-        </Text>
+       
       </Animated.View>
     </TouchableOpacity>
   );

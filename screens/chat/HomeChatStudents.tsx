@@ -24,7 +24,7 @@ const HomeChatStudents = (props: any) => {
   const [messageList, SetMessageList] = useState(UserClass.class.messages);
   const [image, setImage] = React.useState<any>(null);
 
-  const socket = io("http://MacBook-Pro-Marc-Emmanuel.local:2880/");
+  const socket = io("http://192.168.1.63:2880/");
 
   const appendMessage = (newMessage: any) => {
     SetMessageList((prevMessages: any) => [...prevMessages, newMessage]);

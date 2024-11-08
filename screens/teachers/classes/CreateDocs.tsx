@@ -23,7 +23,7 @@ const CreateDoc = (props: any) => {
     try {
       setIsLoading(true);
       // Define the API endpoint
-      const url = "http://MacBook-Pro-Marc-Emmanuel.local:2880/api/chat/teacher/create/document";
+      const url = "http://192.168.1.29:2880/api/chat/teacher/create/document";
 
       // Prepare the data to be sent in the POST request
       const data = {

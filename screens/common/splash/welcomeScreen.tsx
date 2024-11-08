@@ -3,7 +3,6 @@ import Colors from "@/constants/colors";
 import { useTheme } from "@/context/ThemeContext";
 import { typography } from "@/constants/typography";
 import Button from "@/components/ui/buttons/Button";
-import { WelcomeScr } from "@/assets/images/requires";
 import { View, StyleSheet, Image, Text, Dimensions } from "react-native";
 import { useResponsive } from "@/helpers/responsive/metrix";
 
@@ -19,10 +18,10 @@ const WelcomeScreen = (props: any) => {
       <View style={styles.header}>
         <View style={{ height: SCREEN_HEIGHT * 0.02 }}></View>
 
-        <Text style={[typography.h1, styles.title]}>ESchool</Text>
+        <Text style={[typography.h1, styles.title]}>ClassMate</Text>
 
         <View style={styles.imageContainer}>
-          <Image style={styles.image} source={WelcomeScr} />
+          <Image style={styles.image} source={require('@/assets/images/requires/9442.jpg')} />
         </View>
       </View>
 
@@ -49,7 +48,7 @@ const WelcomeScreen = (props: any) => {
             { textAlign: "center", color: theme.colors.text.secondary },
           ]}
         >
-          Optimisez votre expérience académique,{"\n"}facilement prix avec ESchool
+          Optimisez votre expérience académique,{"\n"}facilement prix avec ClassMate
         </Text>
       </View>
 
