@@ -5,7 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { View, Text } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faMessage } from "@fortawesome/free-solid-svg-icons/faMessage";
+import { faBell } from "@fortawesome/free-solid-svg-icons/faBell";
 
 type IconProps = {
   dark?: boolean;
@@ -27,15 +27,15 @@ const FaqIcon = (props: IconProps) => {
     >
       {focused ? (
         <View style={{ gap: 4, alignItems: "center" }}>
-          <FontAwesomeIcon icon={faMessage} size={20} color={Colors.light.text.brand} />
+          <FontAwesomeIcon icon={faBell} size={20} color={Colors.light.text.brand} />
           <Text style={[typography.labelXsLight, { color: Colors.light.text.brand }]}>
-            Discussions
+            Notifications
           </Text>
         </View>
       ) : (
         <View style={{ gap: 4, alignItems: "center" }}>
-          <FontAwesomeIcon icon={faMessage} size={20} color="#737373" />
-          <Text style={[typography.labelXsLight, { color: "#737373" }]}>Discussions</Text>
+          <FontAwesomeIcon icon={faBell} size={20} color="#737373" />
+          <Text style={[typography.labelXsLight, { color: "#737373" }]}>Notifications</Text>
         </View>
       )}
     </View>

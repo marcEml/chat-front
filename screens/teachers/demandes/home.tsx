@@ -27,7 +27,6 @@ const TeacherDemandesHomeScreen = (props: any) => {
       const responseData: RequestData | ResponseError = await GetClassRequests();
 
       if (responseData.status && "requests" in responseData.data) {
-        console.log(responseData.data.requests);
         setRequest(responseData.data.requests);
       }
 

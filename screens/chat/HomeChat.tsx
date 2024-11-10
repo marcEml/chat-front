@@ -24,7 +24,7 @@ const HomeChat = (props: any) => {
   const [messageList, SetMessageList] = useState(UserClass.messages);
   const [image, setImage] = React.useState<any>(null);
 
-  const socket = io("http://192.168.1.63:2880/");
+  const socket = io(process.env.EXPO_PUBLIC_BASE_URL_WEBSOCKET);
 
   const appendMessage = (newMessage: any) => {
     SetMessageList((prevMessages: any) => [...prevMessages, newMessage]);
@@ -79,9 +79,7 @@ const HomeChat = (props: any) => {
       classId: ClassId,
       userId: UserId,
     };
-    console.log(data);
     submitChatMessage(JSON.stringify(data));
-    // setImage("");
   };
 
   const isMessageIdPresent = (messages: any[], id: any): boolean => {

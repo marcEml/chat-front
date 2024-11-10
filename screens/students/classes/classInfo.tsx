@@ -79,8 +79,6 @@ const StudentInfoClass = (props: any) => {
     showToast("default", "code copié dans le presse papier");
   };
 
-  console.log(teacherClass.class);
-
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.screenContainer}>
       <Text

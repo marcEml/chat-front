@@ -41,13 +41,13 @@ const TeacherHomeScreen = (props: any) => {
     }
   };
 
-    // get back
-  
-    useFocusEffect(
-      React.useCallback(() => {
-        getClass();
-      }, [])
-    );
+  // get back
+
+  useFocusEffect(
+    React.useCallback(() => {
+      getClass();
+    }, [])
+  );
 
   // FUNCTIONS
   const onRefresh = React.useCallback(() => {

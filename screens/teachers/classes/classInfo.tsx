@@ -303,6 +303,27 @@ const InfoClass = (props: any) => {
           />
         </View>
 
+        <View style={{ marginBottom: 24 }}>
+          <Text
+            style={[typography.labelMdBold, { color: theme.colors.text.primary, marginBottom: 20 }]}
+          >
+            Notification
+          </Text>
+
+          <Button
+            full
+            size={"md"}
+            isLoading={isLoading}
+            priority={"secondary"}
+            label={"Envoyer une notification"}
+            onPress={() =>
+              props.navigation.navigate("CreateNotif", {
+                classId: teacherClass.id,
+              })
+            }
+          />
+        </View>
+
         <TouchableOpacity
           style={{ marginBottom: 20 }}
           onPress={() =>

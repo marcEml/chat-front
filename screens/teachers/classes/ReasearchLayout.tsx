@@ -8,6 +8,7 @@ import InfoClass from "./classInfo";
 import StudentsClass from "./students";
 import CreateDoc from "./CreateDocs";
 import CreateExam from "./CreateExams";
+import CreateNotif from "./CreateNotification";
 
 const Stack = createNativeStackNavigator();
 
@@ -112,6 +113,23 @@ const ClasseLayout = (props: any) => {
               title={"Vos Étudiants"}
               showLeftIcon={false}
               showRightIcon={false}
+              showBorderBottom={false}
+            />
+          ),
+        }}
+      />
+      
+      <Stack.Screen
+        name="CreateNotif"
+        component={CreateNotif}
+        options={{
+          gestureEnabled: false,
+          header: () => (
+            <PageHeader
+              titleSize={"xl"}
+              showLeftIcon={false}
+              showRightIcon={false}
+              title={"Notifications"}
               showBorderBottom={false}
             />
           ),

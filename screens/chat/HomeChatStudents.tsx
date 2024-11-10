@@ -24,7 +24,7 @@ const HomeChatStudents = (props: any) => {
   const [messageList, SetMessageList] = useState(UserClass.class.messages);
   const [image, setImage] = React.useState<any>(null);
 
-  const socket = io("http://192.168.1.63:2880/");
+  const socket = io(process.env.EXPO_PUBLIC_BASE_URL_WEBSOCKET);
 
   const appendMessage = (newMessage: any) => {
     SetMessageList((prevMessages: any) => [...prevMessages, newMessage]);
@@ -170,8 +170,6 @@ const HomeChatStudents = (props: any) => {
       const fileContent = result.assets[0];
       setImage(fileContent.uri);
       const blobResult = await uriToBlob(fileContent.uri);
-      console.log(fileContent.uri);
-      console.log(blobResult);
     }
   };
 

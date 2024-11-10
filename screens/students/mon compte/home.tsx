@@ -47,7 +47,7 @@ const StudentAccount = (props: any) => {
             Vous trouverez ici toute les informations vous concernant
           </Text>
 
-          <View style={{ width: "100%", alignItems: "center", marginTop: 20, gap: 8 }}>
+          <View style={{ width: "100%", alignItems: "center", marginVertical: 20, gap: 8 }}>
             <Avatar size={"xl"} url={""} type={"photo"} />
             <Text style={[typography.labelLgBold, { maxWidth: 200 }]}>{UserName}</Text>
           </View>

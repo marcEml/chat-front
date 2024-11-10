@@ -9,6 +9,7 @@ import { useResponsive } from "@/helpers/responsive/metrix";
 import ClasseLayout from "./classes/ReasearchLayout";
 import DemandeLayout from "./demandes/DemandesLayout";
 import AccountLayout from "./mon compte/ReasearchLayout";
+import NotificationLayoutStudent from "./notifications/NotificationLayout";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +39,7 @@ const StudentsNavigationTabs = (props: any) => {
     {
       key: 2,
       name: "Faq",
-      component: ClasseLayout,
+      component: NotificationLayoutStudent,
       tabBarIcon: (focused: boolean) => <FaqMenuItem focused={focused} dark={theme.dark} />,
     },
     {

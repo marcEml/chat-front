@@ -119,7 +119,6 @@ const StudentPasswordScreen = (props: any) => {
 
         const result: RegistrationResponseData | ResponseError = await PostData(data);
         const responseData = result.data;
-        console.log(responseData);
 
         if (result.status) {
           showToast("success", "votre compte a été crée avec succès ");
