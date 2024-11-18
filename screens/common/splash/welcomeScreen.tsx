@@ -48,7 +48,7 @@ const WelcomeScreen = (props: any) => {
             { textAlign: "center", color: theme.colors.text.secondary },
           ]}
         >
-          Optimisez votre expérience académique,{"\n"}facilement prix avec ClassMate
+          Optimisez votre expérience académique,{"\n"}facilement avec ClassMate
         </Text>
       </View>
 
