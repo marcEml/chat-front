@@ -1,0 +1,11 @@
+Dans le back on fait une migration de la bd:
+npm install prisma --save-dev
+prisma migrate dev --name init
+npx prisma generate
+npx prisma db push
+npx prisma db push --force--reset
+nodemon server.ts
+
+
+Dans le front on fait:
+

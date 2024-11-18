@@ -1,0 +1,4 @@
+Dans le back on fait une migration de la bd:
+npm install prisma --save-dev
+prisma migrate dev --name init
+npx 

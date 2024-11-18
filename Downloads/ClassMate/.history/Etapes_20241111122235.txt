@@ -1,0 +1,3 @@
+Dans le back on fait une migration de la bd:
+prisma migrate dev --name init
+npm 
